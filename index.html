@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Jump Battle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="console">
+        <div id="start-screen">
+            <h1>SELECT YOUR CHARACTER</h1>
+            <div class="character-selection">
+                <button id="select-youngmin">
+                    <div class="character-preview youngmin"></div>
+                    <span>Youngmin</span>
+                </button>
+                <button id="select-nayoung">
+                    <div class="character-preview nayoung"></div>
+                    <span>Nayoung</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="game-container" style="display: none;">
+            <div id="scoreboard">
+                <div class="score-display">
+                    <span>SCORE</span>
+                    <span id="current-score">0</span>
+                </div>
+                <div class="score-display">
+                    <span>HIGH SCORE</span>
+                    <span id="high-score">0</span>
+                </div>
+                <div class="score-display">
+                    <span id="opponent-high-score-label">OPPONENT HIGH SCORE</span>
+                    <span id="opponent-high-score">0</span>
+                </div>
+                <div class="score-display">
+                    <span>COINS</span>
+                    <span id="coin-count">0</span>
+                </div>
+            </div>
+            <div id="game-area">
+                <div id="background-elements" class="background-sky">
+                    <div class="cloud cloud1"></div>
+                    <div class="cloud cloud2"></div>
+                    <div class="mountain mountain1"></div>
+                    <div class="mountain mountain2"></div>
+                </div>
+                <div class="ground"></div>
+                <div id="player"></div>
+                <div id="obstacles-container"></div>
+                <div id="coins-container"></div>
+                <div id="taunt-container" style="display: none;">
+                    <div id="taunt-character"></div>
+                    <div id="taunt-bubble"></div>
+                </div>
+            </div>
+            <div id="game-over-message" style="display: none;">
+                <p>GAME OVER</p>
+                <p id="encouragement-message" style="display: none;">좀 더 분발하셔야겠어요 ㅜ</p>
+                <button id="restart-button">RESTART</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
