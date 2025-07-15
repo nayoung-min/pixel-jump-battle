@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="500">
+  <rect width="300" height="500" fill="#e6e6fa" />
+  <circle cx="150" cy="100" r="40" fill="#d8bfd8" />
+  <circle cx="135" cy="90" r="5" fill="#000000" />
+  <circle cx="165" cy="90" r="5" fill="#000000" />
+  <line x1="140" y1="115" x2="160" y2="115" stroke="#000000" stroke-width="2" />
+  <text x="150" y="450" font-family="Arial" font-size="30" text-anchor="middle" fill="#000000">Nayoung</text>
+</svg>
