@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
             choices: [
                 { text: '활발하고 애교 많은 지아 선배', next: 19 },
                 { text: '시크하지만 매력적인 나영 선배', next: 40 },
-                { text: '다정하고 똑똑해 보이는 서현 선배', next: 45 }
+                { text: '다정하고 똑똑해 보이는 서현 선배', next: 65 }
             ]
         },
 
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             dialogue: '지아 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 매력에 점점 빠져들었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
             choices: [
-                { text: '선배의 이야기를 들어준다', next: 29 }, // New path A
+                { text: '선배의 이야기를 들어준다', next: 31 }, // New path A
                 { text: '지금은 바쁘다고 말한다', next: 37 } // New path B
             ]
         },
@@ -254,58 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dialogue: '게임이 종료되었습니다.', // End of Path B (index 39)
             background: 'url(assets/realistic_classroom.jpg)'
         },
-        {
-            dialogue: '지아 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 매력에 점점 빠져들었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
-            choices: [
-                { text: '선배의 이야기를 들어준다', next: 31 },
-                { text: '지금은 바쁘다고 말한다', next: 32 }
-            ]
-        },
-        {
-            character: 'jiah',
-            dialogue: '**아... 사실은... 내가 요즘 작곡이 잘 안 돼서 고민이야. 네가 좀 도와줄 수 있을까?',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 진지한 모습에 나는 망설임 없이 고개를 끄덕였다. 우리는 함께 밤늦도록 곡 작업을 했다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: 'jiah',
-            dialogue: '**아, 네 덕분에 좋은 곡이 나올 것 같아! 정말 고마워!',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 환한 미소를 보며, 나는 그녀를 향한 내 마음이 더욱 깊어졌음을 느꼈다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '지아 선배와의 관계는 더욱 돈독해졌다. 우리는 밴드부의 핵심 멤버로 성장했고, 함께 많은 추억을 만들었다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '나는 지아 선배의 이야기를 듣지 않고 교실로 돌아왔다. 선배는 조금 실망한 듯 보였다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '그날 이후, 지아 선배와는 조금 서먹해졌다. 밴드부 활동은 계속했지만, 이전처럼 편하게 지내지는 못했다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
+        
 
         // Nayoung's Route
         {
@@ -371,17 +320,17 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             character: null,
             dialogue: '나영 선배와 함께 악기 상점에 갔다. 선배는 악기를 고르는 내내 진지한 표정으로 조언을 해주었다.',
-            background: 'url(assets/realistic_music_store.svg)'
+            background: 'url(assets/realistic_music_store.jpeg)'
         },
         {
             character: 'nayoung',
             dialogue: '네가 고른 악기, 나쁘지 않네. 잘 다루면 멋있을 거야.',
-            background: 'url(assets/realistic_music_store.svg)'
+            background: 'url(assets/realistic_music_store.jpeg)'
         },
         {
             character: null,
             dialogue: '무심한 듯 던지는 선배의 한마디에, 나는 그녀의 음악에 대한 진심과 나를 향한 알 수 없는 감정을 느꼈다.',
-            background: 'url(assets/realistic_music_store.svg)'
+            background: 'url(assets/realistic_music_store.jpeg)'
         },
         {
             dialogue: '나영 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 차가운 겉모습 속에 숨겨진 따뜻한 마음을 느낄 수 있었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
@@ -418,8 +367,21 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             character: null,
-            dialogue: '게임이 종료되었습니다.', // End of Path A (index 62)
+            dialogue: '나영 선배와 함께하는 매일이 특별했다. 우리는 서로에게 가장 큰 힘이 되어주었다.',
             background: 'url(assets/realistic_classroom.jpg)'
+        },
+        {
+            character: 'nayoung',
+            dialogue: '...고마워. 네 덕분에 여기까지 올 수 있었어.',
+            background: 'url(assets/realistic_classroom.jpg)'
+        },
+        {
+            character: null,
+            dialogue: '선배의 진심 어린 말에 나는 가슴이 벅차올랐다. 우리의 이야기는 이제 시작이었다.',
+            background: 'url(assets/realistic_classroom.jpg)',
+            choices: [
+                { text: '계속해서 나영 선배와 함께한다', next: 82 }
+            ]
         },
         // Path B: Decline Nayoung (index 63)
         {
@@ -434,116 +396,23 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             character: null,
-            dialogue: '게임이 종료되었습니다.', // End of Path B (index 65)
+            dialogue: '나영 선배와의 관계는 이전처럼 가깝지는 않았지만, 밴드부 활동은 계속되었다.',
             background: 'url(assets/realistic_classroom.jpg)'
         },
-        // New segment starts here (index 45)
         {
-            dialogue: '나영 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 차가운 겉모습 속에 숨겨진 따뜻한 마음을 느낄 수 있었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
+            character: null,
+            dialogue: '가끔씩 마주칠 때마다 아쉬움이 남았지만, 각자의 길에서 최선을 다하기로 했다.',
+            background: 'url(assets/realistic_classroom.jpg)',
             choices: [
-                { text: '선배의 이야기를 들어준다', next: 46 }, // New path A
-                { text: '지금은 바쁘다고 말한다', next: 50 } // New path B
+                { text: '다른 길을 선택했지만, 후회는 없다', next: 82 }
             ]
-        },
-        // Path A: Help Nayoung (index 46)
-        {
-            character: 'nayoung',
-            dialogue: '**아... 사실은... 내가 요즘 슬럼프라서... 곡이 잘 안 써져.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 솔직한 모습에 나는 그녀를 위로해주고 싶었다. 우리는 함께 밤늦도록 음악에 대해 이야기했다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: 'nayoung',
-            dialogue: '**아, 네 덕분에 다시 용기가 생겼어. 고마워.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 작은 미소를 보며, 나는 그녀를 향한 내 마음이 더욱 깊어졌음을 느꼈다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '나영 선배와의 관계는 더욱 돈독해졌다. 우리는 밴드부의 핵심 멤버로 성장했고, 함께 많은 추억을 만들었다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.', // End of Path A (index 52)
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        // Path B: Decline Nayoung (index 53)
-        {
-            character: null,
-            dialogue: '나는 나영 선배의 이야기를 듣지 않고 교실로 돌아왔다. 선배는 조금 실망한 듯 보였다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '그날 이후, 나영 선배와는 조금 서먹해졌다. 밴드부 활동은 계속했지만, 이전처럼 편하게 지내지는 못했다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.', // End of Path B (index 55)
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            dialogue: '나영 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 차가운 겉모습 속에 숨겨진 따뜻한 마음을 느낄 수 있었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
-            choices: [
-                { text: '선배의 이야기를 들어준다', next: 46 },
-                { text: '지금은 바쁘다고 말한다', next: 47 }
-            ]
-        },
-        {
-            character: 'nayoung',
-            dialogue: '**아... 사실은... 내가 요즘 슬럼프라서... 곡이 잘 안 써져.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 솔직한 모습에 나는 그녀를 위로해주고 싶었다. 우리는 함께 밤늦도록 음악에 대해 이야기했다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: 'nayoung',
-            dialogue: '**아, 네 덕분에 다시 용기가 생겼어. 고마워.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 작은 미소를 보며, 나는 그녀를 향한 내 마음이 더욱 깊어졌음을 느꼈다.',
-            background: 'url(assets/realistic_music_room.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '나영 선배와의 관계는 더욱 돈독해졌다. 우리는 밴드부의 핵심 멤버로 성장했고, 함께 많은 추억을 만들었다.',
-            background: 'url(assets/realistic_classroom.jpg)'
         },
         {
             character: null,
             dialogue: '게임이 종료되었습니다.',
             background: 'url(assets/realistic_classroom.jpg)'
         },
-        {
-            character: null,
-            dialogue: '나는 나영 선배의 이야기를 듣지 않고 교실로 돌아왔다. 선배는 조금 실망한 듯 보였다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '그날 이후, 나영 선배와는 조금 서먹해졌다. 밴드부 활동은 계속했지만, 이전처럼 편하게 지내지는 못했다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
+        
 
         // Seohyun's Route
         {
@@ -574,8 +443,8 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             dialogue: '서현 선배의 갑작스러운 제안에, 나는 어떻게 대답해야 할지 고민에 빠졌다.',
             choices: [
-                { text: '좋아요, 같이 보러 가요!', next: 66 },
-                { text: '죄송해요, 그날은 좀...', next: 64 }
+                { text: '좋아요, 같이 보러 가요!', next: 72 },
+                { text: '죄송해요, 그날은 좀...', next: 78 }
             ]
         },
         // Seohyun's Route - Accept
@@ -663,65 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dialogue: '게임이 종료되었습니다.', // End of Path B (index 81)
             background: 'url(assets/realistic_classroom.jpg)'
         },
-        {
-            dialogue: '서현 선배와 함께하는 시간이 늘어날수록, 나는 그녀의 지적인 매력에 점점 빠져들었다. 어느 날, 선배가 내게 조심스럽게 말을 걸었다.',
-            choices: [
-                { text: '선배의 이야기를 들어준다', next: 66 },
-                { text: '지금은 바쁘다고 말한다', next: 67 }
-            ]
-        },
-        {
-            character: 'seohyun',
-            dialogue: '**아... 사실은... 내가 요즘 진로 때문에 고민이 많아. 네가 좀 도와줄 수 있을까?',
-            background: 'url(assets/realistic_library.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 진지한 모습에 나는 망설임 없이 고개를 끄덕였다. 우리는 함께 밤늦도록 진로에 대해 이야기했다.',
-            background: 'url(assets/realistic_library.jpg)'
-        },
-        {
-            character: 'seohyun',
-            dialogue: '**아, 네 덕분에 다시 용기가 생겼어. 고마워.',
-            background: 'url(assets/realistic_library.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '선배의 환한 미소를 보며, 나는 그녀를 향한 내 마음이 더욱 깊어졌음을 느꼈다.',
-            background: 'url(assets/realistic_library.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '서현 선배와의 관계는 더욱 돈독해졌다. 우리는 밴드부의 핵심 멤버로 성장했고, 함께 많은 추억을 만들었다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        // Seohyun's Route - Decline
-        {
-            character: null,
-            dialogue: '서현 선배의 제안을 거절했다. 선배는 아쉬워하는 듯했지만, 이내 괜찮다고 웃어 보였다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '나는 선배에게 미안했지만, 그날은 다른 중요한 약속이 있었다. (사실은 밴드부 연습이 있었다.)',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '서현 선배와의 관계는 여전히 좋았지만, 그날의 선택은 우리 사이에 미묘한 거리를 만들었다. 조금 아쉬웠다. 하지만 후회는 없다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        },
-        {
-            character: null,
-            dialogue: '게임이 종료되었습니다.',
-            background: 'url(assets/realistic_classroom.jpg)'
-        }
-    ];
+        ];
 
     let currentStoryIndex = 0;
 
