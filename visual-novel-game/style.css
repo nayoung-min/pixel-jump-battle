@@ -1,0 +1,158 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('assets/placeholder_background.png'); /* Placeholder */
+}
+
+#character {
+    position: absolute;
+    bottom: 15vh; /* Adjusted to be higher */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 400px; /* Increased width */
+    height: 600px; /* Increased height */
+    transition: opacity 0.5s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    filter: drop-shadow(0 0 15px rgba(255, 182, 193, 0.5)); /* Light pink glow */
+}
+
+#dialogue-box {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    max-width: 800px;
+    min-height: 120px;
+    background-color: rgba(255, 240, 245, 0.95); /* Lavender Blush, almost white with pink tint */
+    border: 2px solid #FFC0CB; /* Light pink border */
+    border-radius: 20px; /* More rounded corners */
+    padding: 40px 25px 25px 25px; /* Increased padding-top for name box */
+    box-sizing: border-box;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align text to top */
+}
+
+#character-name-box {
+    position: absolute;
+    top: 10px; /* 대화 상자 내부 상단에 배치 */
+    left: 25px; /* 왼쪽에서 간격 */
+    background-color: rgba(255, 105, 180, 0.9); /* Hot Pink */
+    color: white; /* 흰색 텍스트 */
+    border-radius: 8px; /* 둥근 모서리 */
+    padding: 5px 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* 그림자 */
+    z-index: 2; /* 대화 상자보다 위에 표시 */
+    letter-spacing: 1px; /* 자간 추가 */
+    transition: opacity 0.3s ease-in-out; /* 투명도 변화 애니메이션 */
+}
+
+#character-name {
+    margin: 0;
+}
+
+#dialogue-text {
+    font-size: 1.1em;
+    margin-top: 15px; /* 이름 박스와 대사 텍스트 사이 간격 */
+    color: #333333; /* Dark gray for main text */
+}
+
+#choices {
+    position: absolute;
+    bottom: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-button {
+    padding: 12px 25px; /* Slightly larger padding */
+    background-color: #FFC0CB; /* Pink */
+    color: #333333; /* Dark gray text */
+    border: 2px solid #FF69B4; /* Hot pink border */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 1.05em; /* Slightly larger font */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition and subtle scale */
+    font-family: 'Noto Sans KR', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.choice-button:hover {
+    background-color: #FF69B4; /* Darker pink on hover */
+    color: white; /* White text on hover */
+    transform: translateY(-2px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+#name-input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #1a1a1a;
+}
+
+#name-input-container h1 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#player-name-input {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #FFC0CB;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#start-game-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #FFC0CB;
+    color: #333333;
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-game-button:hover {
+    background-color: #FF69B4;
+    color: white;
+}
